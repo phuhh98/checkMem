@@ -1,0 +1,19 @@
+{
+  "name": "checkMem",
+  "version": "0.0.1",
+  "description": "script for checking process memory usage once every given amout of time",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "process",
+    "memory",
+    "check memory change"
+  ],
+  "author": "Hoai Phu",
+  "license": "MIT",
+  "dependencies": {
+    "deep_clonee": "^0.1.5"
+  }
+}
