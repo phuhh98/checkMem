@@ -115,6 +115,7 @@ checkMem.start = function start() {
 		//gotLog.emit("newLog");
 		return logData;
 	}, interval);
+	return this[Symbol.for("intervalId")];
 }.bind(checkMem);
 
 
