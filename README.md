@@ -3,11 +3,11 @@ A simple script to check changing in processmemory
 
 ## Usage
 ```javascript
-const checkMem = require("checkMem");
+const checkMem = require("check-mem");
 //setting up amount of memory to check and time interval for running
-checkMem.set(<size:String>, <time interval:Number in milisecond>)
-/*eg: checkMem("2mb", 1000);
-acceptable input type of : number(m|mb|k|kb|others: default is byte)*/
+checkMem.set(<size:String>, <time interval:Number in milisecond>);
+//eg: checkMem("2mb", 1000);
+//acceptable input type of : number(m|mb|k|kb|others: default is byte)
 //start monitoring
 checkMem.start() //return Timeout object
 //stop monitoring

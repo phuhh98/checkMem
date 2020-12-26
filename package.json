@@ -1,5 +1,5 @@
 {
-  "name": "checkMem",
+  "name": "check-mem",
   "version": "0.0.1",
   "description": "script for checking process memory usage once every given amout of time",
   "main": "script.js",
@@ -15,5 +15,14 @@
   "license": "MIT",
   "dependencies": {
     "deep_clonee": "^0.1.5"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phuhh98/checkMem.git"
+  },
+  "bugs": {
+    "url": "https://github.com/phuhh98/checkMem/issues"
+  },
+  "homepage": "https://github.com/phuhh98/checkMem#readme"
 }
