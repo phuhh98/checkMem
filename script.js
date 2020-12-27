@@ -38,26 +38,22 @@ let checkSize = function checkSize(size) {
     return sizeInByte;
 }
 
-// round a float number to a number of decimal numbers
-function round(floatNumber, numberOfDecimal) {
-	return Math.floor(floatNumber*10**numberOfDecimal)/(10*numberOfDecimal);
-}
 
 // calculate, print memory log in a readable style, return memLog{} container object with memLog key
 function processMem(memLog) {
 	for (let item in memLog) {
 		let sizeInByte = memLog[item];
 		if ( sizeInByte < 1024) {
-			memLog[item] = round(sizeInByte, 4) + "  BYTE";
+			memLog[item] = sizeInByte + "  BYTE";
 			continue;
 		} else if ( sizeInByte < 1024**2) {
-			memLog[item] = round(sizeInByte/1024, 4) + "  KB";
+			memLog[item] = sizeInByte/1024 + "  KB";
 			continue;
 		} else if ( sizeInByte < 1024**3) {
-			memLog[item] = round(sizeInByte/1024**2, 4) + "  MB";
+			memLog[item] = sizeInByte/1024**2 + "  MB";
 			continue;
 		} else {
-			memLog[item] = round(sizeInByte/1024**3, 4) + "  GB";
+			memLog[item] = sizeInByte/1024**3 + "  GB";
 			continue;
 		}
 	}
