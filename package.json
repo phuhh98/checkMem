@@ -1,6 +1,6 @@
 {
   "name": "check-mem",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "script for checking process memory usage once every given amout of time",
   "main": "script.js",
   "scripts": {
